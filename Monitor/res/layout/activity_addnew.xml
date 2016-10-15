@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:text="Enter Your Details : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextUSERNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:ems="13"
+        android:inputType="textPersonName" 
+        android:hint="Full Name"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextWEIGHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextUSERNAME"
+        android:layout_alignRight="@+id/editTextUSERNAME"
+        android:layout_below="@+id/editTextUSERNAME"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextHEIGHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextWEIGHT"
+        android:layout_alignRight="@+id/editTextWEIGHT"
+        android:layout_below="@+id/editTextWEIGHT"
+        android:ems="10"
+        android:hint="Height in CM"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextAGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextHEIGHT"
+        android:layout_alignLeft="@+id/editTextHEIGHT"
+        android:layout_alignRight="@+id/editTextHEIGHT"
+        android:ems="10"
+        android:hint="Age in years"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editTextCONTNUMBER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAGE"
+        android:layout_alignRight="@+id/editTextAGE"
+        android:layout_below="@+id/editTextAGE"
+        android:ems="10"
+        android:hint="Emergency Contact no +911234567890"
+        android:inputType="phone"
+        android:maxLength="10" />
+    
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/editTextCONTNUMBER"
+        android:layout_marginRight="27dp"
+        android:text="Add" 
+        android:onClick="addNEW"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCONTNUMBER"
+        android:layout_below="@+id/editTextCONTNUMBER"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="48dp"
+        android:text="Cancel"
+        android:onClick="back" />
+
+    
+</RelativeLayout>

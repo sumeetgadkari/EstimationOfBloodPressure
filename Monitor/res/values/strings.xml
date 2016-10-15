@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">BP Monitor</string>
+    <string name="action_settings">Settings</string>
+    <string name="help">&quot;\nThe BloodPressure Allows user to calculate his blood pressure and heartrate and keep the records of the same.The App also contacts the concerned person in case of any irregular results.\n\n  1. Start App.\n\n  2. Enter The Details.\n\n  3. Click Run.\n\n  4. Hold The Microphone close to \n      Heart.  \n\n  5. Put The Fingers on camera and \n     hold for 60 seconds.</string>
+
+</resources>
